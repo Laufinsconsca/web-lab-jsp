@@ -1,0 +1,64 @@
+@import "form.css";
+
+.title{
+    display: block;
+    font-family: sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+}
+
+.pageTitle{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.secondaryTitle{
+    color: grey;
+}
+
+.inputString {
+    background-color: #ebebeb;
+}
+
+.inputString:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.cutLength {
+    background-color: #ebebeb;
+}
+
+.cutLength:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+.submit {
+    width: 320px;
+    margin: 30px auto;
+    color: white;
+    background-color: #0e3721;
+    font-size: 20px;
+}
+
+.submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3750;
+    border-radius: 0;
+}
