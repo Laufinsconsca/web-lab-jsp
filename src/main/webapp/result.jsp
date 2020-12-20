@@ -27,7 +27,7 @@
         <label>
             <input type="text" id="outputString" class="value" name="outputString" readonly/>
         </label>
-        <div class="resultButton"><a class="hrefColor" href="index.jsp">Возврат на исходную страницу</a></div>
+        <div class="resultButton"><a class="hrefColor" href="index.html">Возврат на исходную страницу</a></div>
         <div class="resultButton"><a class="hrefColor" href="result.xml" download="">Скачать результат</a></div>
     </form>
 </div>

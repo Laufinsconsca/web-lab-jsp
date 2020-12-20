@@ -1,10 +1,15 @@
 package model;
 
-public class CutStringRequest {
-    private int cutLength;
+import java.io.Serializable;
+
+public class CutStringRequest implements Serializable{
+    private Integer cutLength;
     private String inputString;
+    private boolean valid;
 
     public CutStringRequest() {
+        cutLength = 0;
+        inputString = "";
     }
 
     public CutStringRequest(String inputString, int cutLength) {
@@ -20,11 +25,21 @@ public class CutStringRequest {
         this.inputString = inputString;
     }
 
-    public int getCutLength() {
+    public Integer getCutLength() {
         return cutLength;
     }
 
-    public void setCutLength(int cutLength) {
+    public void setCutLength(Integer cutLength) {
         this.cutLength = cutLength;
+    }
+
+    public boolean isValid() {
+        if (!valid) {
+            if (cutLength != 0 && inputString != null){
+                valid = true;
+                return valid;
+            }
+        }
+        return valid;
     }
 }

@@ -1,8 +1,8 @@
 <%@ page import="model.CutStringRequest" %>
-<%request.setCharacterEncoding("UTF-8");%>
 <jsp:useBean id="stringRequest" class="model.CutStringRequest" scope="session"/>
 <jsp:setProperty name="stringRequest" property="*" />
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%--<jsp:include page="index.html"/>--%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ru">
@@ -31,7 +31,14 @@
         </label>
         <button class="submit formEntry" type="submit" onclick="checkInputData()">Подтвердить</button>
         <input type="hidden" id="hiddenField">
-        <%if (stringRequest.isValid()){%>
+<%--        <%--%>
+<%--            if (request.getParameter("hiddenField") == "true") {--%>
+<%--        %>--%>
+<%--        <jsp:forward page="result.html"/>--%>
+<%--        <%--%>
+<%--            }--%>
+<%--        %>--%>
+        <%if (stringRequest.isOkStatus()){%>
         <jsp:forward page="result.html"/>
         <%}
         %>

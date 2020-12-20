@@ -1,9 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <jsp:useBean id="cutStringResponse" class="model.CutStringResponse" scope="session"/>
-<jsp:setProperty name="cutStringResponse" property="*"/>
 <html>
 <%if (cutStringResponse == null) {%>
-<meta http-equiv="refresh" content="5; URL=html/index.html"/>
+<meta http-equiv="refresh" content="5; URL=index.jsp"/>
 <%
     }
 %>
