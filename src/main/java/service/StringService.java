@@ -1,7 +1,8 @@
 package service;
 
+import model.CutStringRequest;
 import model.CutStringResponse;
 
 public interface StringService {
-    CutStringResponse perform(String inputString, int cutLength);
+    CutStringResponse performCutString(CutStringRequest cutStringRequest);
 }
