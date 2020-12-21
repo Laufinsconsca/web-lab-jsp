@@ -20,14 +20,18 @@ body {
     font-size: 1.3em;
 }
 
-.hrefColor {
+a.hrefColor:link {
     color: white;
 }
 
-.hrefColor:visited {
-    color: red;
+a.hrefColor:visited {
+    color: red !important;
 }
 
-.hrefColor:active {
+a.hrefColor:hover {
+    color: blue;
+}
+
+a.hrefColor:active {
     color: yellow;
 }
