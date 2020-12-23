@@ -2,7 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-public class CutStringRequest implements Serializable{
+public class CutStringRequest implements Serializable {
     private Integer cutLength;
     private String inputString;
     private boolean valid;
@@ -35,9 +35,9 @@ public class CutStringRequest implements Serializable{
 
     public boolean isValid() {
         if (!valid) {
-            if (cutLength != 0 && inputString != null){
+            if (cutLength != 0 && inputString != null) {
                 valid = true;
-                return valid;
+                return true;
             }
         }
         return valid;

@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Лабораторная работа №3</title>
-    <link rel="stylesheet" href="css/resultStyle.css">
+    <link href="css/resultStyle.css" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
@@ -10,18 +10,18 @@
         <div class="title">Удаление начальных символов</div>
         <div class="name">Исходная строка:</div>
         <label>
-            <input type="text" id="inputString" class="value" name="inputString" placeholder="Введите строку" readonly/>
+            <input class="value" id="inputString" name="inputString" placeholder="Введите строку" readonly type="text"/>
         </label>
         <div class="name">Количество обрезаемых символов:</div>
         <label>
-            <input type="number" id="cutLength" class="value" name="cutLength" placeholder="Введите число"/>
+            <input class="value" id="cutLength" name="cutLength" placeholder="Введите число" type="number"/>
         </label>
         <div class="name">Полученная строка:</div>
         <label>
-            <input type="number" id="outputString" class="value" name="outputString" placeholder="Введите число"/>
+            <input class="value" id="outputString" name="outputString" placeholder="Введите число" type="number"/>
         </label>
         <div class="resultButton"><a class="hrefColor" href="index.html">Возврат на исходную страницу</a></div>
-        <div class="resultButton"><a class="hrefColor" href="result.xml" download>Скачать результат</a></div>
+        <div class="resultButton"><a class="hrefColor" download href="result.xml">Скачать результат</a></div>
     </form>
 </div>
 </body>

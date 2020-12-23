@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Лабораторная работа №3</title>
-    <link rel="stylesheet" href="css/indexStyle.css">
+    <link href="css/indexStyle.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="wrapper">
-    <form class="form" action="result.html" id="indexForm" method="post">
+    <form action="index.jsp" class="form" id="indexForm" method="post">
         <div class="pageTitle title">Удаление начальных символов</div>
-        <div class="secondaryTitle title">Удаление начальных символов (первый аргумент – строка, второй – количество символов, которые надо удалить,
-            результат – уменьшенная строка)</div>
+        <div class="secondaryTitle title">Удаление начальных символов (первый аргумент – строка, второй – количество
+            символов, которые надо удалить,
+            результат – уменьшенная строка)
+        </div>
         <label>
-            <input type="text" id="inputString" class="inputString formEntry" name="inputString" placeholder="Введите строку" />
+            <input class="inputField formEntry" id="inputString" name="inputString" placeholder="Введите строку"
+                   type="text"/>
         </label>
         <label>
-            <input type="number" id="cutLength" class="cutLength formEntry" name="cutLength" placeholder="Введите число"/>
+            <input class="inputField formEntry" id="cutLength" name="cutLength" placeholder="Введите число"
+                   type="number"/>
         </label>
         <button class="submit formEntry" onclick="checkInputData()">Подтвердить</button>
-        <input type="hidden" id="hiddenField">
     </form>
 </div>
 

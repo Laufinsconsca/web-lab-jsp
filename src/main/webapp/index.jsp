@@ -1,14 +1,14 @@
 <%@ page import="model.CutStringRequest" %>
 <%request.setCharacterEncoding("UTF-8");%>
 <jsp:useBean id="stringRequest" class="model.CutStringRequest" scope="session"/>
-<jsp:setProperty name="stringRequest" property="*" />
+<jsp:setProperty name="stringRequest" property="*"/>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" content="text/css">
     <title>Лабораторная работа №3</title>
     <link rel="stylesheet" href="css/indexStyle.css">
 </head>
@@ -22,18 +22,18 @@
             результат – уменьшенная строка)
         </div>
         <label>
-            <input type="text" id="inputString" class="inputString formEntry" name="inputString"
+            <input type="text" id="inputString" class="inputField formEntry" name="inputString"
                    placeholder="Введите строку"/>
         </label>
         <label>
-            <input type="text" id="cutLength" class="cutLength formEntry" name="cutLength"
+            <input type="number" id="cutLength" class="inputField formEntry" name="cutLength"
                    placeholder="Введите число"/>
         </label>
         <button class="submit formEntry" type="submit" onclick="checkInputData()">Подтвердить</button>
-        <input type="hidden" id="hiddenField">
-        <%if (stringRequest.isValid()){%>
+        <%if (stringRequest.isValid()) {%>
         <jsp:forward page="result.html"/>
-        <%}
+        <%
+            }
         %>
     </form>
 </div>

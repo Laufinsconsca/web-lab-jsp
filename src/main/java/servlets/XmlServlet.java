@@ -1,14 +1,13 @@
 package servlets;
 
+import model.CutStringResponse;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.CutStringResponse;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
-
 import java.io.PrintWriter;
 
 @WebServlet("/result.xml")

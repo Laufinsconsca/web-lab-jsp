@@ -16,6 +16,7 @@ body {
     position: absolute;
     border-top: 5px solid #0e3721;
 }
+
 ::-webkit-input-placeholder {
     font-size: 1.3em;
 }
@@ -25,7 +26,7 @@ a.hrefColor:link {
 }
 
 a.hrefColor:visited {
-    color: red !important;
+    color: red;
 }
 
 a.hrefColor:hover {
